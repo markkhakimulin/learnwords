@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <style name="AppTheme" parent="@style/_AppTheme">
+
+  </style>
+
+  <style name="_AppTheme" parent="Theme.AppCompat.NoActionBar">
+
+  <item name="android:editTextStyle">@style/EditTextAppTheme</item>
+
+  <item name="android:textColorHighlight">#99669900</item>
+
+  <item name="android:textColor">@color/colorControlHighlight</item>
+
+  <item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextViewAppTheme</item>
+
+  <item name="android:checkboxStyle">@style/CheckBoxAppTheme</item>
+
+  <item name="android:radioButtonStyle">@style/RadioButtonAppTheme</item>
+
+  <item name="android:buttonStyle">@style/ButtonAppTheme</item>
+
+  <item name="android:imageButtonStyle">@style/ImageButtonAppTheme</item>
+
+  <item name="android:spinnerStyle">@style/SpinnerAppTheme</item>
+
+  <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItemAppTheme</item>
+
+  <item name="android:progressBarStyleHorizontal">@style/ProgressBarAppTheme</item>
+
+  <item name="android:seekBarStyle">@style/SeekBarAppTheme</item>
+
+  <item name="android:ratingBarStyle">@style/RatingBarAppTheme</item>
+
+  <item name="android:ratingBarStyleIndicator">@style/RatingBarBigAppTheme</item>
+
+  <item name="android:ratingBarStyleSmall">@style/RatingBarSmallAppTheme</item>
+
+  <item name="android:buttonStyleToggle">@style/ToggleAppTheme</item>
+
+  <item name="android:listViewStyle">@style/ListViewAppTheme</item>
+
+  <item name="android:listViewWhiteStyle">@style/ListViewAppTheme.White</item>
+
+  <item name="android:spinnerItemStyle">@style/SpinnerItemAppTheme</item>
+
+  <item name="android:activatedBackgroundIndicator">@drawable/drawer_list_selector</item>
+
+</style>
+  <style name="AppThemeActionBar" parent="Theme.AppCompat">
+
+    <item name="android:editTextStyle">@style/EditTextAppTheme</item>
+
+    <item name="android:textColorHighlight">#99669900</item>
+
+    <item name="android:textColor">@color/colorControlHighlight</item>
+
+    <item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextViewAppTheme</item>
+
+    <item name="android:checkboxStyle">@style/CheckBoxAppTheme</item>
+
+    <item name="android:radioButtonStyle">@style/RadioButtonAppTheme</item>
+
+    <item name="android:buttonStyle">@style/ButtonAppTheme</item>
+
+    <item name="android:imageButtonStyle">@style/ImageButtonAppTheme</item>
+
+    <item name="android:spinnerStyle">@style/SpinnerAppTheme</item>
+
+    <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItemAppTheme</item>
+
+    <item name="android:progressBarStyleHorizontal">@style/ProgressBarAppTheme</item>
+
+    <item name="android:seekBarStyle">@style/SeekBarAppTheme</item>
+
+    <item name="android:ratingBarStyle">@style/RatingBarAppTheme</item>
+
+    <item name="android:ratingBarStyleIndicator">@style/RatingBarBigAppTheme</item>
+
+    <item name="android:ratingBarStyleSmall">@style/RatingBarSmallAppTheme</item>
+
+    <item name="android:buttonStyleToggle">@style/ToggleAppTheme</item>
+
+    <item name="android:listViewStyle">@style/ListViewAppTheme</item>
+
+    <item name="android:listViewWhiteStyle">@style/ListViewAppTheme.White</item>
+
+    <item name="android:spinnerItemStyle">@style/SpinnerItemAppTheme</item>
+
+    <item name="android:activatedBackgroundIndicator">@drawable/drawer_list_selector</item>
+  </style>
+  <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+    <item name="android:windowBackground">@drawable/background_splash</item>
+  </style>
+
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="words_per_lesson">1</integer>
+    <integer name="words_study">15</integer>
+    <integer name="right_answer_percent">10</integer>
+    <integer name="wrong_answer_percent">5</integer>
+    <bool name="empty_answer_is_wrong">false</bool>
+    <integer name="wrong_answers_to_skip">1</integer>
+    <bool name="use_tips">true</bool>
+    <bool name="privacy">false</bool>
+</resources>

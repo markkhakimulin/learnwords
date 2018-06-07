@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Learn Words</string>
+    <string name="stop_service">Стоп</string>
+    <string name="start_service">Старт</string>
+    <string name="action_settings">Настройки</string>
+    <string name="action_return">Возврат</string>
+    <string name="action_add_word">Добавить слово</string>
+    <string name="action_remove_words">Удалить слова</string>
+    <string name="action_search_word">Искать слово</string>
+    <string name="action_search_user">Искать пользователя</string>
+    <string name="action_load_dict">Импорт словаря</string>
+    <string name="action_add_dict">Добавить словарь</string>
+    <string name="action_upload_dict">Экспорт словаря</string>
+    <string name="action_remove_dict">Удалить словарь</string>
+    <string name="action_rename_dict">Переименовать словарь</string>
+    <string name="action_about_app">О приложении</string>
+    <string name="action_help">Помощь</string>
+    <string name="action_clear_wordstats">Очистить статистику</string>
+    <string name="action_unlock_word">Разблокикровать слова</string>
+    <string name="action_lock_word">Заблокировать слова</string>
+    <string name="action_delete_word">Удалить слова</string>
+    <string name="title_about_app">О приложении</string>
+    <string name="list_empty">Список слов пуст</string>
+    <string name="navigation_title">Управление словарями</string>
+    <string name="drawer_open">Открыть навигацию</string>
+    <string name="drawer_close">Закрыть навигацию</string>
+    <string name="dict_name">Основной</string>
+    <string name="error_title">Ошибка</string>
+    <string name="no_dict">---</string>
+    <string name="word">Слово</string>
+    <string name="translate">Перевод</string>
+    <string name="add_word_title">Добавить слово</string>
+    <string name="add">Добавить словарь</string>
+    <string name="new_dict_title">Введите имя словаря</string>
+    <string name="edit_word_title">Редактирование слова</string>
+    <string name="direction_word_to_translate">слово->перевод</string>
+    <string name="direction_translate_to_word">перевод->слово</string>
+    <string name="confirm_remove_dict_message">Удалить словарь?</string>
+    <string name="confirm_remove_dict_title">Подтверждение</string>
+    <string name="word_updated_toast">Слово было обновлено</string>
+    <string name="word_list_action_mode_title"> Выбрано</string>
+    <string name="word_list_action_delete_items_complete">Удалено: </string>
+    <string name="word_list_action_delete_items_progress_title">Идет удаление</string>
+    <string name="word_list_action_clear_items_complete">Очищено: </string>
+    <string name="word_list_action_clear_items_complete_title">Очищение</string>
+    <string name="word_list_action_locked_items_complete">Заблокировано: </string>
+    <string name="word_list_action_unlocked_items_complete">Разблокировано: </string>
+    <string name="sdcard0">Память телефона</string>
+    <string name="sdcard1">SD-карта</string>
+    <string name="default_dict_name">Основной</string>
+    <string name="not_using">Не используется</string>
+    <string name="action_stop_service">Стоп</string>
+    <string name="action_start_service">Запустить сервис</string>
+    <string name="action_resume_service">Возобновить сервис</string>
+    <string name="action_pause_service_8">На 8 ч</string>
+    <string name="action_pause_service_1">На 1 ч</string>
+    <string name="dictionary_downloaded">Словарь загружен</string>
+    <string name="dictionary_uploaded">Словарь выгружен</string>
+    <string name="parent_directory">Родительский каталог</string>
+    <string name="press_to_save">Сохранить в этом каталоге</string>
+    <string name="directory_actual">Актуальный каталог: </string>
+    <string name="folder">Каталог</string>
+    <string name="file_size">Размер файла: </string>
+    <string name="stopped">Сервис остановлен</string>
+    <string name="paused1">Сервис приостановлен на 1 час</string>
+    <string name="paused8">Сервис приостановлен на 8 часов</string>
+    <string name="running">Сервис запущен</string>
+    <string name="dictionary_changed">Текущий словарь был изменен.
+    Сервис остановлен.</string>
+    <string name="load_default_dictionary_title">Загрузка словаря</string>
+    <string name="load_default_dictionary_message">Загрузить словаь по умолчанию?</string>
+    <string name="skip">Пропустить</string>
+
+    //-------------------Errors----------------------
+    <string name="error_no_dict_choose">Сначала выберите словарь или создайте новый</string>
+    <string name="error_dict_is_empty">Словарь пуст</string>
+    <string name="error_no_internet_connection">Нет соединения с интернетом</string>
+    <string name="error_empty_text_word">Слово пустое </string>
+    <string name="error_empty_text_translate">Перевод пустой </string>
+    <string name="error_dictionary_is_not_yours">Вы не владелец словаря </string>
+    <string name="error_dictionary_not_found_title">Словари не найдены</string>
+    <string name="error_dictionary_not_found_message">Выполнить синхронизацию данных из интернета?</string>
+    <string name="error_no_permission_allowed">Разрешения не включены</string>
+
+    <string-array name="values">
+        <item>Item 1</item>
+        <item>Item 2</item>
+        <item>Item 3</item>
+        <item>Item 4 is really long</item>
+        <item>Item 5</item>
+        <item>Item 6</item>
+    </string-array>
+    <string name="title_activity_settings">Настройки</string>
+
+    <string name="settings_toast_reset">Настройки сброшены</string>
+    <string name="settings_toast_sync">Нажмите кнопку "Синхронизовать", чтобы применить настройку</string>
+    <!-- Example General settings -->
+    <string name="pref_general">Настройки словаря</string>
+    <string name="pref_general_empty_is_wrong">Пустой ответ</string>
+    <string name="pref_general_empty_is_wrong_summary">Считать пустой ответ как неправильный</string>
+
+    <string name="pref_general_public">Приватность</string>
+    <string name="pref_general_public_summary">Доступен для поиска</string>
+    <string name="pref_general_non_public_summary">Не доступен для поиска</string>
+
+    <string name="pref_general_study_word">Количество одновременно изучаемых слов</string>
+    <string name="pref_general_study_word_summary">Количество одновременно изучаемых слов</string>
+    <string name="pref_general_wrong_answers_to_skip">Количество пропусков для завершения урока</string>
+    <string name="pref_general_use_tips">Использовать подсказки в уроке</string>
+    <string name="pref_general_use_tips_summary">Использование не засчитывает правильность слова</string>
+    <string name="pref_general_words_per_unlock">Количество слов в уроке</string>
+    <string name="pref_general_words_per_unlock_summary">Количество слов в уроке</string>
+    <string name="pref_general_right_answer">Процент за првильный ответ</string>
+    <string name="pref_general_wrong_answer">Процент за неправильный ответ</string>
+    <string name="pref_general_reset_settings">Сбросить настройки словаря</string>
+    <string name="pref_general_reset_settings_summary">Все настройки будут заменены на стандартные</string>
+
+    <string-array name="pref_general_right_answer_list_entries">
+        <item>5%</item>
+        <item>10%</item>
+        <item>15%</item>
+        <item>20%</item>
+        <item>25%</item>
+    </string-array>
+    <string-array name="pref_general_right_answer_list_values">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+    </string-array>
+
+    <string-array name="pref_general_wrong_answer_list_entries">
+        <item>5%</item>
+        <item>10%</item>
+        <item>15%</item>
+    </string-array>
+    <string-array name="pref_general_wrong_answer_list_values">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+    </string-array>
+
+    <string name="label_google_sign_in">Вход через Google</string>
+    <string name="desc_google_sign_in">Используйте Google аккаунт чтобы аутентифицироваться в базе данных.</string>
+    <string name="auth_failed">Аутентификация неудачная</string>
+    <string name="google_status_fmt">Google пользователь: %s</string>
+    <string name="google_title_text">Google аутентификация</string>
+    <string name="sign_in">Вход</string>
+    <string name="sign_out">Выход</string>
+    <string name="signed_in">Аутентифицирован</string>
+    <string name="signed_out">Не аутентифицирован</string>
+    <string name="disconnect">Отсоединиться</string>
+    <string name="firebase_status_fmt">Database пользователь: %s</string>
+    <string name="loading">Подождите…</string>
+    <string name="no_auth">Не авторизован</string>
+
+</resources>

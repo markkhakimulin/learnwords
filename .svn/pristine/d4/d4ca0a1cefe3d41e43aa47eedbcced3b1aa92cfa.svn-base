@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.game_burger.learnwords.MainActivity">
+    <item
+        android:id="@+id/action_clear_wordstats"
+        android:icon="@drawable/broom"
+        android:title="@string/action_clear_wordstats"
+        app:showAsAction="always"
+        android:showAsAction="always"
+        tools:ignore="AppCompatResource"/>
+
+    <item
+        android:id="@+id/action_remove_words"
+        android:icon="@drawable/delete"
+        android:title="@string/action_delete_word"
+        app:showAsAction="always"
+        android:showAsAction="always"
+        tools:ignore="AppCompatResource"/>
+    <item
+        android:id="@+id/action_lock_words"
+        android:icon="@drawable/lock"
+        android:menuCategory="container"
+        android:title="@string/action_lock_word"
+        app:showAsAction="always"
+        android:showAsAction="always"
+        tools:ignore="AppCompatResource"/>
+    <item
+        android:id="@+id/action_unlock_words"
+        android:icon="@drawable/unlock"
+        android:menuCategory="container"
+        android:title="@string/action_unlock_word"
+        app:showAsAction="always"
+        android:showAsAction="always"
+        tools:ignore="AppCompatResource"/>
+
+</menu>
+
+<!--
+    app:showAsAction="ifRoom|withText"
+    android:showAsAction="ifRoom|withText"
+    tools:ignore="AppCompatResource"-->

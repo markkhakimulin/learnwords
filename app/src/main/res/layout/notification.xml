@@ -1,0 +1,9 @@
+<RelativeLayout
+    android:layout_height="wrap_content"  android:layout_width="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button
+        android:layout_width="@dimen/button_height"
+        android:layout_height="@dimen/button_width"
+        android:layout_margin="@dimen/buttons_mergin"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</RelativeLayout>

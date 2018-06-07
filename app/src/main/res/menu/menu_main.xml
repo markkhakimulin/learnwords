@@ -1,0 +1,50 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context="com.game_burger.learnwords.MainActivity">
+    <item
+        android:id="@+id/action_search_word"
+        android:icon="@drawable/search"
+        android:title="@string/action_search_word"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/empty"
+        android:icon="@drawable/more"
+        android:orderInCategory="101"
+        android:title="options"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/action_settings"
+                android:icon="@drawable/settings"
+                android:title="@string/action_settings"
+                app:showAsAction="ifRoom" />
+            <item
+                android:id="@+id/action_load_dict"
+                android:icon="@drawable/download"
+                android:title="@string/action_load_dict"
+                app:showAsAction="ifRoom" />
+            <item
+                android:id="@+id/action_upload_dict"
+                android:icon="@drawable/upload"
+                android:title="@string/action_load_dict"
+                app:showAsAction="ifRoom" />
+            <item
+                android:id="@+id/action_rename_dict"
+                android:icon="@drawable/ic_action_rename"
+                android:title="@string/action_rename_dict"
+                app:showAsAction="ifRoom" />
+            <item
+                android:id="@+id/action_remove_dict"
+                android:icon="@drawable/delete"
+                android:title="@string/action_remove_dict"
+                app:showAsAction="ifRoom" />
+           <!-- <item
+                android:id="@+id/action_about_app"
+                android:icon="@drawable/info"
+                android:title="@string/action_about_app"
+                app:showAsAction="ifRoom" />-->
+        </menu>
+    </item>
+</menu>
