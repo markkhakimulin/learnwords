@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="text_size">18sp</dimen>
-    <dimen name="button_height">32dp</dimen>
-    <dimen name="button_width">32dp</dimen>
-</resources>

@@ -264,18 +264,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         mDatabase = FirebaseDatabase.getInstance().getReference();
         mAuth = FirebaseAuth.getInstance();
 
-      /*  GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestIdToken(getString(R.string.default_web_client_id))
-                .requestEmail()
-                .build();
-        // [END config_signin]
-
-        mGoogleApiClient = new GoogleApiClient.Builder(this)
-                .enableAutoManage(this *//* FragmentActivity *//*, this *//* OnConnectionFailedListener *//*)
-                .addApi(Auth.GOOGLE_SIGN_IN_API, gso)
-                .build();*/
-
-
         createViewPager();
         createNavigationMenu();
 
@@ -1362,8 +1350,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         return  local_id;
     }
 
-
-
     private String addWordToDB(SQLiteDatabase db,String word,String translate,String dict_id,int lock,String date,@Nullable String word_id)    {
 
 
@@ -1546,6 +1532,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
 
     }
+
     void createEmptyDefaultDictionary() {
         SQLiteDatabase db = mSqLiteOpenHelper.getWritableDatabase();
         if (db == null) {

@@ -13,7 +13,7 @@ import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.os.CountDownTimer;
 import android.os.IBinder;
-import android.support.v7.app.NotificationCompat;
+import android.support.v4.app.NotificationCompat;
 import android.telephony.TelephonyManager;
 import android.view.LayoutInflater;
 import android.view.WindowManager;
@@ -141,7 +141,7 @@ public class LockScreenService extends Service {
         PendingIntent pauseServiceIntent8 = PendingIntent.getBroadcast(this, 0, new Intent("PauseService8"), PendingIntent.FLAG_UPDATE_CURRENT);
         PendingIntent pauseServiceIntent1 = PendingIntent.getBroadcast(this, 0, new Intent("PauseService1"), PendingIntent.FLAG_UPDATE_CURRENT);
 
-        Notification notification = new NotificationCompat.Builder(this)
+        Notification notification = new NotificationCompat.Builder(this,"LearnWords")
                 .setContentTitle(getResources().getString(R.string.app_name))
                 .setTicker(getResources().getString(R.string.app_name))
                 .setContentText(getString(R.string.running))

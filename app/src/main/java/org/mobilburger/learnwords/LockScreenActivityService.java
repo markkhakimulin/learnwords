@@ -439,14 +439,14 @@ public class LockScreenActivityService extends Service {
         tipsUsed = false;
 
 
-        //if (useAdapitiveTips && currentCompletely < adapitiveTipsLimit ) {
-        //  int blindQuantity = 0;
-        //   int letterQuantity = mCurrentTranslate.length() * adapitiveTipsLimit / 100;//сколько букв из слова учавствуют в подсказках всего
-        //   blindQuantity = (int) (letterQuantity - Math.min(Math.ceil((double) letterQuantity * (double)currentCompletely / (double)adapitiveTipsLimit), letterQuantity));
+        if (useAdapitiveTips && currentCompletely < adapitiveTipsLimit ) {
+            int blindQuantity = 0;
+            int letterQuantity = mCurrentTranslate.length() * adapitiveTipsLimit / 100;//сколько букв из слова учавствуют в подсказках всего
+            blindQuantity = (int) (letterQuantity - Math.min(Math.ceil((double) letterQuantity * (double)currentCompletely / (double)adapitiveTipsLimit), letterQuantity));
 
-        //   mTranslateTextView.setText(TextUtils.substring(mCurrentTranslate,0,blindQuantity));
-        //String mCurrentTranslateRandom = randomize(TextUtils.substring(mCurrentTranslate, blindQuantity, mCurrentTranslate.length()));
-        // }
+            mTranslateTextView.setText(TextUtils.substring(mCurrentTranslate,0,blindQuantity));
+            String mCurrentTranslateRandom = randomize(TextUtils.substring(mCurrentTranslate, blindQuantity, mCurrentTranslate.length()));
+        }
         mCurrentTranslate = removeInsignificantCharacters(mCurrentTranslate);
         mCurrentTranslateRandom = randomize(mCurrentTranslate);
 
