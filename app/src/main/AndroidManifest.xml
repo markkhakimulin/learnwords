@@ -25,10 +25,8 @@
     <!-- android:process="org.mobilburger.learnwords.LockScreenActivityService" -->
     <!--android:theme="@style/AppTheme"-->
     <application
-        android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        tools:replace="android:allowBackup">
+        android:label="@string/app_name">
         <activity android:name=".MainActivity"
             android:theme="@style/AppTheme"/>
         <activity android:name=".OpenFileDialogActivity"

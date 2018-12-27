@@ -33,6 +33,8 @@ import android.widget.TextView;
 import com.firebase.ui.database.ChangeEventListener;
 import com.firebase.ui.database.FirebaseArray;
 import com.firebase.ui.database.FirebaseListAdapter;
+import com.firebase.ui.database.FirebaseListOptions;
+import com.google.firebase.FirebaseOptions;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -185,8 +187,15 @@ public class SearchListActivity extends AppCompatActivity implements FragmentMan
 
        public class UsersAdapter extends FirebaseCustomAdapter {
 
-            public UsersAdapter(Context context, Query ref,Callable callable) {
-                super(context,ref,callable);
+
+           public UsersAdapter(Context context,Query ref,Callable callable) {
+               this(context,new FirebaseListOptions.Builder().
+               setLayout(R.layout.user_item).
+               setQuery(ref,Object.class).build(),callable);
+           }
+
+            public UsersAdapter(Context context, FirebaseListOptions options, Callable callable) {
+                super(options,context,callable);
             }
 
             @Override
@@ -292,8 +301,9 @@ public class SearchListActivity extends AppCompatActivity implements FragmentMan
 
        public class DictionaryAdapter extends FirebaseCustomAdapter {
 
-            public DictionaryAdapter(Context context, Query ref,Callable callable) {
-               super(context,ref,callable);
+            public DictionaryAdapter(FirebaseListOptions options,Context context, Callable callable) {
+
+               super(options,context,callable);
             }
 
            @Override
@@ -384,8 +394,13 @@ public class SearchListActivity extends AppCompatActivity implements FragmentMan
             showProgressDialog();
             mDatabase = FirebaseDatabase.getInstance().getReference();
             mAuth = FirebaseAuth.getInstance();
+            Query ref = mDatabase.child(DBHelper.TB_USERS).child(mUserId).child(DBHelper.TB_DICTS).orderByChild("public").equalTo(true);
 
-            setListAdapter(new DictionaryAdapter(mContext, mDatabase.child(DBHelper.TB_USERS).child(mUserId).child(DBHelper.TB_DICTS).orderByChild("public").equalTo(true), new Callable() {
+            FirebaseListOptions.Builder builder = new FirebaseListOptions.Builder();
+            builder.setLayout(R.layout.user_item)
+                    .setQuery(ref,Object.class);
+
+            setListAdapter(new DictionaryAdapter(builder.build(),mContext, new Callable() {
                 @Override
                 public Object call() throws Exception {
                     hideProgressDialog();
@@ -416,16 +431,15 @@ public class SearchListActivity extends AppCompatActivity implements FragmentMan
 
         protected Callable onDatachanged;
         protected SearchListActivity mContext;
-        FirebaseCustomAdapter(Context context, Query ref,Callable onDatachanged) {
-
-            super(context, Object.class, R.layout.user_item, ref);
+        FirebaseCustomAdapter(FirebaseListOptions options,Context context,Callable onDatachanged) {
+            super(options);
             this.onDatachanged = onDatachanged;
             this.mContext = (SearchListActivity) context;
 
         }
 
         String getKey(int position) {
-            return mSnapshots.get(position).getKey();
+            return getSnapshots().getSnapshot(position).getKey();
         }
 
        @Override
